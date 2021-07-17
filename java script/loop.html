@@ -1,0 +1,102 @@
+  <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+        //  let num= 1;
+        // document.write("<ul>")
+        // while(num<=13){
+
+        //     num=num+1;
+        //     document.write ( "<li>" + num + "my name is benish </li>"  );
+        //     num++;
+        // }
+        // document.write("</ul>");
+        // let a=20;
+
+        // do {
+        //     document.write("nice");
+        //     a=a+2
+
+        // } while ( a<=30);
+      //   let num=prompt("Enter a value ")
+      // for( let count=1;count<=10;count++){
+      //     document.write(num + " x " + count + " = "+ num * count ); 
+      //     document.write("<br>");
+      // }
+      // let num= prompt("printer name ")
+      // for( let i=1; i<10; i++ ){
+      //   document.write("benish");
+      //   document.write("<br>");
+      // }
+//       let shape= prompt("enter shape");
+//       for(let  i=0; i<10; i+=2)
+//       for(let j=1;j<10; j+=2){
+// document.write("*");
+//       } 
+//       document.write("<br>");
+//       document.write("center");
+
+// function doWork(){
+// console.log("doWork");
+// doWork1();
+// }
+
+// Function doWork1(){
+//   console.log("hello words ");
+// }
+function sumNumber(num1,num2){
+  return num1 + num2;
+}
+function mulNumber(num1,num2){
+  return num1 * num2;
+}
+function subNumber(num1,num2){
+  return num1 - num2;
+}
+function divNumber(num1,num2){
+  return num1 / num2;
+}
+let b=+prompt("enter num1");
+let operator=prompt("Enter operator number");
+let a=+prompt("enter n um2") ;
+let result;
+if(operator=="+")
+{
+  result= sumNumber(b,a);
+}
+else if(operator=="*")
+{
+  result= mulNumber(b,a);
+}
+
+else if(operator=="-")
+{
+  result= subNumber(b,a);
+}
+
+else if(operator=="/")
+{
+  result= divNumber(b,a);
+}
+else{
+  alert("Enter a valid opertaor")
+}
+
+
+document.write(result);
+
+ 
+
+
+
+       
+          </script>
+  </body>
+</html>
+  

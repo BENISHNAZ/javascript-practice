@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .idImg{
+            width: 50px;
+            height: 50px;
+        }
+        .id{
+            border:3px solid black;
+            width: 100px;
+            
+            
+        }
+        #mainBox{
+            display: flex;
+            flex-wrap: wrap;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <button onClick="sayHello()">click me</button>
+    <button onClick="sayBallon()">click me</button>
+    <button onClick="sayFruit()">click me</button>
+
+    <div id="mainBox"></div>
+    <script>
+        for(i=1;i<100;i++){
+        let box =document.createElement("div");
+        box.className=('id');
+        let img =document.createElement("img");
+        img.className=('idImg');
+        img.src='download.jpg';
+        box.appendChild(img);
+        mainBox.appendChild(box);
+    };
+    function sayHello(){
+      alert("hello");
+    }
+
+    function sayBallon(){
+    let img=document.createElement("img1")
+    img.className='imgStyle';
+    img .src=('images.jpg');
+    }; 
+    function sayFruit(){
+        let img=document.createElement("img1")
+    img.className='imgStyle';
+    img .src=('download.jpg');
+    }
+
+    </script>
+</body>
+</html>

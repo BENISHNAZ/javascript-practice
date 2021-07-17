@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="widt
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let province=[
+            {
+                name:[karachi]
+                city:['hydrabad','lhr','karachi']
+            },
+            {
+                name:[karachi]
+                city:['islamabad','swat','murree']
+            },
+        ]
+       let cityName=prompt("enter city");
+       let milgya    =  province.find((province)=>{
+     if (province.name==cityName){
+         return true;
+     }
+       })
+       console.log(cityName);
+
+    </script>
+</body>
+</html>

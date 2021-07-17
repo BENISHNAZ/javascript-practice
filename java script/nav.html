@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    nav{
+        background-color: blue;
+    }
+    ol{
+        list-style-type: none;
+    
+    }
+    ol> li{
+     
+    line-height: 49px;
+    display: inline-block;
+    height: 56px;
+    margin-left: 30px;
+    padding-left: 54px;
+    padding-right: 58px;
+    background-color: violet;
+    }
+    ol> li:hover{
+        background: wheat;
+    }
+
+    #parent:hover #child {
+display: block;
+
+    }
+    #child>li{
+        display: none;
+        position: absolute;
+    }
+    #parent>ol{
+        display: block;
+    }
+
+</style>
+<body>
+    <nav>
+
+        <ol>
+            <li>hi</li>
+            <li id="parent">province
+                <ol id="child">
+                    <li>pakistan</li>
+                    <li>fsd</li>
+                    <li>karachi</li>
+                    <li>islamabad</li>
+                </ol>
+            </li>
+            <li>game</li>
+            <li>sports</li>
+        </ol>
+    </nav>
+</body>
+</html>

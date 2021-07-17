@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //  let   valueName=prompt('enter dish');
+       
+    // let sentence='i like mangoes.beauce mangoes is so sweet. do you like mngoes.'
+    // console.log(sentence.replaceAll('mangoes', valueName));
+    // let final=sentence.split('mangoes').join(valueName);
+    // console.log(final);
+    // // sr new logic
+
+
+    let searchName="sabzi";
+        let str = "I love sabzi do u like sabzi phir aj sabzi khalen";
+        let newStr = "";
+
+        let newName = prompt("enter new dish")
+        let myName=newName[0].toUpperCase()+newName.slice(1);
+
+        for (let i = 0; i < str.length; i++) {
+
+            if (s tr.slice(i, +i + searchName.length) == "sabzi") {
+                newStr += str.slice(0, i) + myName;
+                str = str.slice(+i + searchName.length);
+                i = 0;
+            }
+
+        }
+
+        console.log(newStr + str);
+    </script>
+</body>
+</html> 

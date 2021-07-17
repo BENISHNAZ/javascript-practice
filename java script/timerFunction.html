@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .fruita{
+        width: 300px;
+        position: absolute;
+    }
+
+</style>
+<body>
+
+<id="baloonContainer">
+
+    <script>
+        for (let i = 0; i < 4; i++) {
+
+let targetApple = document.createElement('img');
+targetApple.src = "images.jpg";
+targetApple.className = "fruita";
+targetApple.style.left = Math.random() * innerWidth + 'px';
+
+baloonContainer.appendChild(targetApple);
+
+setInterval(() => {
+
+    targetApple.style.top = (targetApple.offsetTop + 3) + 'px';
+
+}, Math.random() * 100);
+
+
+}
+    </script>
+</body>
+</html>

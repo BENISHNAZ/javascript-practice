@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .myid{
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+        }
+        .imgBox{
+            width: 50px;
+        }
+        #mainBox{
+            margin: auto;
+            display: flex;
+
+        }
+    </style>
+</head> 
+<body>
+<div id="mainBox"></div>
+    <script>
+        
+        for(i=0;i<4;i++){
+            let sampBox=document.createElement('div');
+        sampBox.className="myid";
+        let img1 =document.createElement('img');
+        img1.className="imgBox";
+        img1.src ="images.jpg";
+        sampBox.appendChild(img1);
+        mainBox.appendChild(sampBox)
+        }
+    //  sir code dhtml 
+    
+    </script>
+</body>
+</html> 
